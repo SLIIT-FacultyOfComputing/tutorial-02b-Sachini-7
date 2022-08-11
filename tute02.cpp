@@ -42,3 +42,25 @@ int main()
   
    return 0;
 }
+
+#include<iostream>
+using namespace std;
+int main ()
+{
+  int eType , otHours , otRate;
+  float salary , netSalary;
+
+  cout<<"Enter the employee type , salary and OT hours: ";
+  cin>>eType>>salary>>otHours;
+  switch(eType)
+    {
+      case 1:otRate = 1000;
+             break;
+      case 2:otRate = 1500;
+             break;
+      default:otRate = 1700;
+    }
+  netSalary = salary + otHours * otRate;
+
+  cout<<"The net salary is: "<<netSalary;
+}

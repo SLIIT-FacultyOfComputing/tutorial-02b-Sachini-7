@@ -27,3 +27,35 @@ int main() {
   std::cout << std::endl;
   return 0;
 }
+
+#include<iostream>
+long Factorical(int no);
+long nCr(int n,int r);
+int main (void)
+{
+  int n,r;
+
+  std::cout<<"Enter the value for n: ";
+  cin>>n;
+
+  std::cout<<"Enter the value for r: ";
+  cin>>r;
+
+  std<<cout<<"nCr = ";
+  std::cout<<nCr(n,r);
+
+  std::cout<<std::endl;
+}
+long Factorical(int no)
+{
+  int result = 0;
+  for(i = 0 ; i < no ; i++)
+    {
+      result = no * i;
+    }
+}
+long nCr(int n,int r)
+{
+  nCr = n!/r!*(n-r)!;
+  return nCr;
+}
